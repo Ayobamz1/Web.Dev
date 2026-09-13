@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="A web development learning platform inspired by modern web.dev layouts."
+    >
+
+    <title>Web Development</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&family=Google+Sans+Text:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         HEADER / NAVIGATION
+    ========================================================== -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <!-- LOGO -->
+            <a href="#" class="logo" aria-label="Web development home">
+
+                <span class="logo-mark" aria-hidden="true">
+                    <span class="logo-blue"></span>
+                    <span class="logo-green"></span>
+                    <span class="logo-purple"></span>
+                </span>
+
+                <span class="logo-text">web.dev</span>
+
+            </a>
+
+
+            <!-- =================================================
+                 DESKTOP NAVIGATION
+            ================================================== -->
+
+            <nav class="main-nav" aria-label="Main navigation">
+
+                <!-- RESOURCES DROPDOWN -->
+                <details class="resources-menu">
+
+                    <summary>
+                        Resources
+                        <span class="arrow" aria-hidden="true">⌄</span>
+                    </summary>
+
+                    <div class="resources-dropdown">
+
+                        <!-- COLUMN 1 -->
+                        <div class="resource-column">
+
+                            <h2>Web Platform</h2>
+
+                            <p>
+                                Explore the technologies that make the modern web.
+                            </p>
+
+                            <a href="#html">HTML</a>
+                            <a href="#css">CSS</a>
+                            <a href="#javascript">JavaScript</a>
+
+                        </div>
+
+
+                        <!-- COLUMN 2 -->
+                        <div class="resource-column">
+
+                            <h2>User experience</h2>
+
+                            <p>
+                                Learn how to create better experiences for your users.
+                            </p>
+
+                            <a href="#performance">Performance</a>
+                            <a href="#accessibility">Accessibility</a>
+                            <a href="#identity">Identity</a>
+
+                        </div>
+
+
+                        <!-- COLUMN 3 -->
+                        <div class="resource-column">
+
+                            <h2>Learn</h2>
+
+                            <p>
+                                Improve your web development skills.
+                            </p>
+
+                            <a href="#learn-html">Learn HTML</a>
+                            <a href="#learn-css">Learn CSS</a>
+                            <a href="#learn-js">Learn JavaScript</a>
+                            <a href="#learn-ai">Learn AI</a>
+                            <a href="#learn-performance">Learn Performance</a>
+                            <a href="#learn-accessibility">Learn Accessibility</a>
+                            <a href="#courses">More courses</a>
+
+                        </div>
+
+
+                        <!-- COLUMN 4 -->
+                        <div class="resource-column">
+
+                            <h2>Additional resources</h2>
+
+                            <p>
+                                Discover useful resources and development tools.
+                            </p>
+
+                            <a href="#ai">AI and the web</a>
+                            <a href="#explore">Explore</a>
+                            <a href="#pagespeed">PageSpeed Insights</a>
+                            <a href="#podcasts">Podcasts &amp; shows</a>
+                            <a href="#newsletter">Developer Newsletter</a>
+                            <a href="#about">About</a>
+
+                        </div>
+
+                    </div>
+
+                </details>
+
+
+                <!-- NORMAL NAVIGATION LINKS -->
+
+                <a href="#discover">Discover</a>
+
+                <a href="#baseline">Baseline</a>
+
+                <a href="#baseline-info">
+                    How to use Baseline
+                </a>
+
+                <a href="#news">
+                    Blog
+                </a>
+
+                <a href="#case-studies">
+                    Case Studies
+                </a>
+
+            </nav>
+
+
+            <!-- =================================================
+                 HEADER ACTIONS
+            ================================================== -->
+
+            <div class="header-actions">
+
+                <!-- SEARCH -->
+                <a href="#search" class="search-box">
+
+                    <span class="search-icon" aria-hidden="true">
+                        ⌕
+                    </span>
+
+                    <span>Search</span>
+
+                    <kbd>/</kbd>
+
+                </a>
+
+
+                <!-- THEME BUTTON -->
+                <button
+                    type="button"
+                    class="theme-button"
+                    aria-label="Change appearance"
+                >
+                    ☼
+                </button>
+
+
+                <!-- LANGUAGE -->
+                <details class="language-menu">
+
+                    <summary>
+                        <span aria-hidden="true">◎</span>
+                        Language
+                        <span class="small-arrow">⌄</span>
+                    </summary>
+
+                    <div class="language-dropdown">
+
+                        <a href="#">English</a>
+                        <a href="#">French</a>
+                        <a href="#">Spanish</a>
+                        <a href="#">Portuguese</a>
+
+                    </div>
+
+                </details>
+
+
+                <!-- SIGN IN -->
+                <a href="#" class="sign-in">
+                    Sign in
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================================
+         BLUE GUIDANCE BANNER
+    ========================================================== -->
+
+    <section class="guidance-banner">
+
+        <div class="content-width guidance-content">
+
+            <span class="guidance-icon" aria-hidden="true">
+                ✦
+            </span>
+
+            <p>
+                Guidance to help you build modern web experiences
+                that work across browsers.
+            </p>
+
+            <a href="#learn">
+                Learn more
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <main>
+
+
+        <!-- =========================================================
+             HERO SECTION
+        ========================================================== -->
+
+        <section class="hero-section">
+
+            <div class="content-width hero-content">
+
+                <div class="hero-text">
+
+                    <span class="eyebrow">
+                        WEB DEVELOPMENT
+                    </span>
+
+                    <h1>
+                        Building a better web, together
+                    </h1>
+
+                    <p>
+                        Learn how to create websites that are fast,
+                        accessible, secure and enjoyable for everyone.
+                    </p>
+
+                    <div class="button-row">
+
+                        <!-- CHANGE BUTTON LINK HERE -->
+                        <a href="#explore" class="primary-button">
+                            Explore the web
+                        </a>
+
+                        <!-- CHANGE BUTTON LINK HERE -->
+                        <a href="#learn" class="secondary-button">
+                            Start learning
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     HERO IMAGE
+                     REPLACE THIS IMAGE
+                ================================================== -->
+
+                <div class="hero-image image-frame">
+
+                    <!-- IMAGE PLACEHOLDER
+                         Put your image inside the images folder.
+
+                         Example:
+                         images/hero.png
+                    -->
+
+                    <img
+                        src="images/hero.png"
+                        alt="Illustration representing web development"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================================
+             INTRODUCTION SECTION
+        ========================================================== -->
+
+        <section class="intro-section">
+
+            <div class="content-width intro-grid">
+
+                <div class="intro-text">
+
+                    <h2>
+                        Building for the modern web
+                    </h2>
+
+                    <p>
+                        Learn practical techniques for creating
+                        beautiful, accessible, fast and secure
+                        websites that work across different browsers
+                        and devices.
+                    </p>
+
+                </div>
+
+
+                <!-- IMAGE PLACEHOLDER -->
+
+                <div class="intro-image image-frame">
+
+                    <!-- Replace with your own image -->
+
+                    <img
+                        src="images/intro.png"
+                        alt="Illustration of modern web development"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================================
+             FEATURE CARDS
+        ========================================================== -->
+
+        <section class="feature-section">
+
+            <div class="content-width feature-grid">
+
+
+                <!-- CARD 1 -->
+
+                <article class="feature-card">
+
+                    <div class="card-image gray-image">
+
+                        <!-- IMAGE PLACEHOLDER -->
+
+                        <img
+                            src="images/ai-web.png"
+                            alt="Illustration showing artificial intelligence and the web"
+                        >
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-label">
+                            FEATURED
+                        </span>
+
+                        <h2>
+                            AI and the web
+                        </h2>
+
+                        <p>
+                            Discover useful ideas for building
+                            modern experiences with AI and web
+                            technologies.
+                        </p>
+
+                        <!-- CHANGE BUTTON LINK HERE -->
+
+                        <a href="#ai" class="text-button">
+                            Explore AI
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CARD 2 -->
+
+                <article class="feature-card">
+
+                    <div class="card-image yellow-image">
+
+                        <!-- IMAGE PLACEHOLDER -->
+
+                        <img
+                            src="images/inp.png"
+                            alt="Illustration representing website performance"
+                        >
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-label">
+                            PERFORMANCE
+                        </span>
+
+                        <h2>
+                            Optimize INP
+                        </h2>
+
+                        <p>
+                            Learn practical ways to improve
+                            responsiveness and create faster
+                            interactions.
+                        </p>
+
+                        <!-- CHANGE BUTTON LINK HERE -->
+
+                        <a href="#performance" class="text-button">
+                            Learn more
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- CARD 3 -->
+
+                <article class="feature-card">
+
+                    <div class="card-image blue-image">
+
+                        <!-- IMAGE PLACEHOLDER -->
+
+                        <img
+                            src="images/payments.png"
+                            alt="Illustration representing payments and identity"
+                        >
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="card-label">
+                            SECURITY
+                        </span>
+
+                        <h2>
+                            Payments &amp; Identity
+                        </h2>
+
+                        <p>
+                            Learn about modern approaches to
+                            authentication, identity and payments.
+                        </p>
+
+                        <!-- CHANGE BUTTON LINK HERE -->
+
+                        <a href="#identity" class="text-button">
+                            Explore
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================================
+             EXPLORE THE WEB PLATFORM
+        ========================================================== -->
+
+        <section class="explore-section" id="explore">
+
+            <div class="content-width">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        WEB PLATFORM
+                    </span>
+
+                    <h2>
+                        Explore the web platform
+                    </h2>
+
+                    <p>
+                        Understand the technologies that power
+                        websites and web applications.
+                    </p>
+
+                </div>
+
+
+                <div class="platform-grid">
+
+
+                    <!-- HTML -->
+
+                    <article class="platform-card" id="html">
+
+                        <div class="platform-icon html-icon">
+                            &lt;/&gt;
+                        </div>
+
+                        <h3>
+                            HTML
+                        </h3>
+
+                        <p>
+                            Learn how HTML structures content
+                            on the web.
+                        </p>
+
+                        <a href="#learn-html">
+                            Explore HTML →
+                        </a>
+
+                    </article>
+
+
+                    <!-- CSS -->
+
+                    <article class="platform-card" id="css">
+
+                        <div class="platform-icon css-icon">
+                            #
+                        </div>
+
+                        <h3>
+                            CSS
+                        </h3>
+
+                        <p>
+                            Create beautiful layouts, animations
+                            and responsive designs.
+                        </p>
+
+                        <a href="#learn-css">
+                            Explore CSS →
+                        </a>
+
+                    </article>
+
+
+                    <!-- JAVASCRIPT -->
+
+                    <article class="platform-card" id="javascript">
+
+                        <div class="platform-icon js-icon">
+                            JS
+                        </div>
+
+                        <h3>
+                            JavaScript
+                        </h3>
+
+                        <p>
+                            Add interaction and dynamic behavior
+                            to your websites.
+                        </p>
+
+                        <a href="#learn-js">
+                            Explore JavaScript →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================================
+             LEARN THE WEB PLATFORM
+        ========================================================== -->
+
+        <section class="learn-section" id="learn">
+
+            <div class="content-width">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        COURSES
+                    </span>
+
+                    <h2>
+                        Learn the web platform
+                    </h2>
+
+                    <p>
+                        Follow structured courses to strengthen
+                        your web development skills.
+                    </p>
+
+                </div>
+
+
+                <div class="course-grid">
+
+
+                    <!-- LEARN HTML -->
+
+                    <article class="course-card" id="learn-html">
+
+                        <div class="course-image">
+
+                            <!-- IMAGE PLACEHOLDER -->
+
+                            <img
+                                src="images/learn-html.png"
+                                alt="HTML course illustration"
+                            >
+
+                        </div>
+
+                        <div class="course-content">
+
+                            <h3>
+                                Learn HTML
+                            </h3>
+
+                            <p>
+                                Build a strong foundation in
+                                HTML and semantic structure.
+                            </p>
+
+                            <a href="#">
+                                Start course →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- LEARN CSS -->
+
+                    <article class="course-card" id="learn-css">
+
+                        <div class="course-image">
+
+                            <!-- IMAGE PLACEHOLDER -->
+
+                            <img
+                                src="images/learn-css.png"
+                                alt="CSS course illustration"
+                            >
+
+                        </div>
+
+                        <div class="course-content">
+
+                            <h3>
+                                Learn CSS
+                            </h3>
+
+                            <p>
+                                Learn modern CSS layouts,
+                                styling and responsive design.
+                            </p>
+
+                            <a href="#">
+                                Start course →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- LEARN JAVASCRIPT -->
+
+                    <article class="course-card" id="learn-js">
+
+                        <div class="course-image">
+
+                            <!-- IMAGE PLACEHOLDER -->
+
+                            <img
+                                src="images/learn-javascript.png"
+                                alt="JavaScript course illustration"
+                            >
+
+                        </div>
+
+                        <div class="course-content">
+
+                            <h3>
+                                Learn JavaScript
+                            </h3>
+
+                            <p>
+                                Understand programming concepts
+                                and interactive web development.
+                            </p>
+
+                            <a href="#">
+                                Start course →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================================
+             NEWS SECTION
+        ========================================================== -->
+
+        <section class="news-section" id="news">
+
+            <div class="content-width">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        NEWS
+                    </span>
+
+                    <h2>
+                        Keep up on web development news
+                    </h2>
+
+                    <p>
+                        Stay informed about important changes,
+                        technologies and development practices.
+                    </p>
+
+                </div>
+
+
+                <div class="news-grid">
+
+                    <article class="news-card">
+
+                        <span class="news-category">
+                            WEB PLATFORM
+                        </span>
+
+                        <h3>
+                            New developments for modern websites
+                        </h3>
+
+                        <p>
+                            Explore recent improvements and
+                            technologies available to developers.
+                        </p>
+
+                        <a href="#">
+                            Read article →
+                        </a>
+
+                    </article>
+
+
+                    <article class="news-card">
+
+                        <span class="news-category">
+                            DEVELOPMENT
+                        </span>
+
+                        <h3>
+                            Better tools for web developers
+                        </h3>
+
+                        <p>
+                            Discover techniques and tools that
+                            can improve your development workflow.
+                        </p>
+
+                        <a href="#">
+                            Read article →
+                        </a>
+
+                    </article>
+
+
+                    <article class="news-card">
+
+                        <span class="news-category">
+                            COMMUNITY
+                        </span>
+
+                        <h3>
+                            Ideas from the web community
+                        </h3>
+
+                        <p>
+                            Learn from developers building
+                            interesting experiences on the web.
+                        </p>
+
+                        <a href="#">
+                            Read article →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================================
+             BASELINE SECTION
+        ========================================================== -->
+
+        <section class="topic-band baseline-band" id="baseline">
+
+            <div class="content-width topic-grid">
+
+                <!-- LEFT SIDE -->
+
+                <div class="topic-introduction">
+
+                    <span class="eyebrow">
+                        WEB PLATFORM
+                    </span>
+
+                    <h2>
+                        Baseline
+                    </h2>
+
+                    <p>
+                        Quickly understand which web platform
+                        features are ready for use across
+                        modern browsers.
+                    </p>
+
+                    <!-- CHANGE BUTTON LINK HERE -->
+
+                    <a href="#baseline-info" class="outline-button">
+                        More on Baseline
+                    </a>
+
+                </div>
+
+
+                <!-- RIGHT SIDE -->
+
+                <div class="topic-items">
+
+                    <article class="topic-item">
+
+                        <span class="topic-date">
+                            JULY 2026
+                        </span>
+
+                        <h3>
+                            Baseline monthly digest
+                        </h3>
+
+                        <p>
+                            Discover recent platform updates
+                            and useful information for developers.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <span class="topic-date">
+                            TOOLS
+                        </span>
+
+                        <h3>
+                            Baseline Checker
+                        </h3>
+
+                        <p>
+                            Check browser compatibility and
+                            make better decisions about features.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <span class="topic-date">
+                            GUIDANCE
+                        </span>
+
+                        <h3>
+                            Introducing Baseline Alerts
+                        </h3>
+
+                        <p>
+                            Stay aware of browser support changes
+                            as your projects evolve.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <span class="topic-date">
+                            WEB
+                        </span>
+
+                        <h3>
+                            Understanding browser support
+                        </h3>
+
+                        <p>
+                            Learn how Baseline can help you
+                            choose web platform features.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================================
+             CSS AND UI DESIGN
+        ========================================================== -->
+
+        <section class="topic-band css-band" id="design">
+
+            <div class="content-width topic-grid">
+
+                <div class="topic-introduction">
+
+                    <h2>
+                        CSS and UI design
+                    </h2>
+
+                    <p>
+                        Learn modern techniques for creating
+                        beautiful and flexible interfaces.
+                    </p>
+
+                    <!-- CHANGE BUTTON LINK HERE -->
+
+                    <a href="#css" class="outline-button">
+                        Explore CSS
+                    </a>
+
+                </div>
+
+
+                <div class="topic-items">
+
+                    <article class="topic-item">
+
+                        <h3>
+                            Adapting typography to user preference
+                        </h3>
+
+                        <p>
+                            Learn ways to make typography
+                            comfortable and flexible.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <h3>
+                            Modern CSS color spaces
+                        </h3>
+
+                        <p>
+                            Explore modern approaches to
+                            color in CSS.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <h3>
+                            What are source maps?
+                        </h3>
+
+                        <p>
+                            Understand how source maps can
+                            improve debugging.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <h3>
+                            CSS subgrid
+                        </h3>
+
+                        <p>
+                            Learn how subgrid can help create
+                            sophisticated layouts.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================================
+             CORE WEB VITALS
+        ========================================================== -->
+
+        <section class="topic-band vitals-band" id="performance">
+
+            <div class="content-width topic-grid">
+
+                <div class="topic-introduction">
+
+                    <h2>
+                        Core Web Vitals
+                    </h2>
+
+                    <p>
+                        Improve website performance and
+                        understand important user experience metrics.
+                    </p>
+
+                    <!-- CHANGE BUTTON LINK HERE -->
+
+                    <a href="#performance" class="outline-button">
+                        Explore Core Web Vitals
+                    </a>
+
+                </div>
+
+
+                <div class="topic-items">
+
+                    <article class="topic-item">
+
+                        <h3>
+                            Effective ways to improve performance
+                        </h3>
+
+                        <p>
+                            Explore practical performance
+                            optimization techniques.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <h3>
+                            How to optimize INP
+                        </h3>
+
+                        <p>
+                            Learn how to improve interaction
+                            responsiveness.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <h3>
+                            Understanding LCP
+                        </h3>
+
+                        <p>
+                            Learn about Largest Contentful Paint
+                            and common optimization mistakes.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <h3>
+                            Measuring Web Vitals
+                        </h3>
+
+                        <p>
+                            Understand how to measure important
+                            performance metrics.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================================
+             PROGRESSIVE WEB APPS
+        ========================================================== -->
+
+        <section class="topic-band pwa-band" id="pwa">
+
+            <div class="content-width topic-grid">
+
+                <div class="topic-introduction">
+
+                    <h2>
+                        Progressive Web Apps
+                    </h2>
+
+                    <p>
+                        Create capable web experiences that
+                        feel more like applications.
+                    </p>
+
+                    <!-- CHANGE BUTTON LINK HERE -->
+
+                    <a href="#learn-pwa" class="outline-button">
+                        More on PWA
+                    </a>
+
+                </div>
+
+
+                <div class="topic-items">
+
+                    <article class="topic-item">
+
+                        <h3>
+                            Learn PWA
+                        </h3>
+
+                        <p>
+                            Learn the fundamentals of
+                            progressive web applications.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <h3>
+                            Modern browser capabilities
+                        </h3>
+
+                        <p>
+                            Discover capabilities that make
+                            web applications more powerful.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <h3>
+                            New patterns for web apps
+                        </h3>
+
+                        <p>
+                            Explore useful patterns for
+                            building modern applications.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <h3>
+                            Browser API showcase
+                        </h3>
+
+                        <p>
+                            Discover APIs that expand what
+                            websites can accomplish.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================================
+             ACCESSIBILITY
+        ========================================================== -->
+
+        <section class="topic-band accessibility-band" id="accessibility">
+
+            <div class="content-width topic-grid">
+
+                <div class="topic-introduction">
+
+                    <h2>
+                        Accessible for all
+                    </h2>
+
+                    <p>
+                        Learn how to create websites that
+                        are easier for everyone to use.
+                    </p>
+
+                    <!-- CHANGE BUTTON LINK HERE -->
+
+                    <a href="#learn-accessibility" class="outline-button">
+                        Learn accessibility
+                    </a>
+
+                </div>
+
+
+                <div class="topic-items">
+
+                    <article class="topic-item">
+
+                        <h3>
+                            Learn Accessibility
+                        </h3>
+
+                        <p>
+                            Build your understanding of
+                            accessible web development.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <h3>
+                            Testing color contrast
+                        </h3>
+
+                        <p>
+                            Learn techniques for creating
+                            readable color combinations.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <h3>
+                            Building accessible navigation
+                        </h3>
+
+                        <p>
+                            Create navigation systems that
+                            work for more users.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <h3>
+                            Community highlights
+                        </h3>
+
+                        <p>
+                            Discover useful accessibility
+                            ideas from the web community.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================================
+             PAYMENTS AND IDENTITY
+        ========================================================== -->
+
+        <section class="topic-band payments-band" id="identity">
+
+            <div class="content-width topic-grid">
+
+                <div class="topic-introduction">
+
+                    <h2>
+                        Payments and identity
+                    </h2>
+
+                    <p>
+                        Learn about secure sign-in,
+                        authentication and payment experiences.
+                    </p>
+
+                    <!-- CHANGE BUTTON LINK HERE -->
+
+                    <a href="#payments" class="outline-button">
+                        Explore payments
+                    </a>
+
+                </div>
+
+
+                <div class="topic-items">
+
+                    <article class="topic-item">
+
+                        <h3>
+                            Passkeys
+                        </h3>
+
+                        <p>
+                            Learn about modern passwordless
+                            authentication.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <h3>
+                            Sign in securely
+                        </h3>
+
+                        <p>
+                            Explore modern authentication
+                            experiences.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <h3>
+                            Web Payments
+                        </h3>
+
+                        <p>
+                            Understand payment technologies
+                            available on the web.
+                        </p>
+
+                    </article>
+
+
+                    <article class="topic-item">
+
+                        <h3>
+                            Payment and address forms
+                        </h3>
+
+                        <p>
+                            Build forms that are easier
+                            and safer for users.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================================
+             NEWSLETTER
+        ========================================================== -->
+
+        <section class="newsletter-section" id="newsletter">
+
+            <div class="content-width newsletter-container">
+
+                <div class="newsletter-text">
+
+                    <span class="eyebrow">
+                        NEWSLETTER
+                    </span>
+
+                    <h2>
+                        Developer Newsletter
+                    </h2>
+
+                    <p>
+                        Get useful web development news,
+                        resources and learning material
+                        delivered to your inbox.
+                    </p>
+
+                </div>
+
+
+                <!-- NEWSLETTER FORM -->
+
+                <form class="newsletter-form">
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="primary-button"
+                    >
+                        Subscribe
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer class="site-footer" id="about">
+
+        <div class="content-width footer-container">
+
+
+            <!-- FOOTER BRAND -->
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+
+                    <span class="logo-mark" aria-hidden="true">
+                        <span class="logo-blue"></span>
+                        <span class="logo-green"></span>
+                        <span class="logo-purple"></span>
+                    </span>
+
+                    <span class="logo-text">
+                        web.dev
+                    </span>
+
+                </a>
+
+                <p>
+                    Helpful resources for building modern
+                    websites and web applications.
+                </p>
+
+            </div>
+
+
+
+            <!-- FOOTER COLUMN -->
+
+            <div class="footer-column">
+
+                <h2>
+                    Contribute
+                </h2>
+
+                <a href="#">
+                    Community
+                </a>
+
+                <a href="#">
+                    Write for us
+                </a>
+
+                <a href="#">
+                    GitHub
+                </a>
+
+            </div>
+
+
+
+            <!-- FOOTER COLUMN -->
+
+            <div class="footer-column">
+
+                <h2>
+                    Related content
+                </h2>
+
+                <a href="#">
+                    Chrome Developers
+                </a>
+
+                <a href="#">
+                    Google Developers
+                </a>
+
+                <a href="#">
+                    PageSpeed
+                </a>
+
+            </div>
+
+
+
+            <!-- FOOTER COLUMN -->
+
+            <div class="footer-column">
+
+                <h2>
+                    Follow
+                </h2>
+
+                <a href="#">
+                    YouTube
+                </a>
+
+                <a href="#">
+                    LinkedIn
+                </a>
+
+                <a href="#">
+                    X
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <div class="content-width footer-bottom-content">
+
+                <p>
+                    © 2026 Web Development
+                </p>
+
+                <div>
+
+                    <a href="#">
+                        Terms
+                    </a>
+
+                    <a href="#">
+                        Privacy
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
