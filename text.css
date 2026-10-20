@@ -89,7 +89,7 @@ select {
   font-size: 20px;
 }
 
-.search kbd {
+.search span:last-child {
   background-color: white;
   border: 1px solid #dddddd;
   border-radius: 4px;
@@ -188,19 +188,24 @@ select {
   flex: 1;
   flex-direction: column;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 30px;
 }
 
 .rectangle-box img {
   border-radius: 12px;
   display: block;
-  margin-bottom: 18px;
-  max-width: 100%;
+  margin: 40px 20px;
+  max-width: 85%;
 }
 
-.rectangle-box h3 {
-  font-size: 24px;
+.rectangle-box .textlink h3 {
+  font-size: 30px;
+  font-weight: 500;
   margin-bottom: 12px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .rectangle-box p {
@@ -208,21 +213,24 @@ select {
 }
 
 .rectangle-box .outline-button {
-  align-self: flex-start;
-  margin-top: auto;
+  align-self: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .outline-button {
-  border: 1px solid #1a73e8;
+  outline: 2px solid #0950ad;
+  font-weight: 550;
   border-radius: 22px;
   color: #1a73e8;
   display: inline-block;
-  padding: 8px 18px;
+  padding: 8px 40px;
 }
 
 .outline-button:hover {
-  background-color: #1a73e8;
-  color: white;
+  background-color: transparent;
+  outline: none;
+  color: #1a73e8;
 }
 
 .gray-section {
@@ -279,6 +287,10 @@ select {
   justify-content: center;
   margin-bottom: 20px;
   width: 50px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .simple-card h3,
@@ -299,6 +311,15 @@ select {
   margin-bottom: 12px;
 }
 
+.learn-section .outline-button {
+  transition: 0.3s;
+}
+
+.learn-section .outline-button:hover {
+  background-color: #1a73e8;
+  color: #fff;
+}
+
 .learn h3,
 .learn p {
   text-align: left;
@@ -308,6 +329,15 @@ select {
 .newsletter {
   background-color: #f5f6f7;
   padding: 60px 0;
+}
+
+.news-section .outline-button {
+  transition: 0.3s;
+}
+
+.news-section .outline-button:hover {
+  color: #fff;
+  background-color: #1a73e8;
 }
 
 .news-heading {
@@ -340,8 +370,28 @@ select {
   background-color: #f5f6f7;
 }
 
+.css-section h3 {
+  font-size: 50px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.resource-section h3 {
+  font-size: 50px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
 .resource-intro p {
   margin: 15px 0 22px;
+  /* color: #202124; */
 }
 
 .resource-intro a:not(.outline-button) {
@@ -452,13 +502,13 @@ select {
 .footer {
   border-top: 1px solid #dddddd;
   display: grid;
-  gap: 40px;
+  gap: 20px;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   padding: 50px 30px 25px;
 }
 
 .footer-about {
-  max-width: 380px;
+  max-width: 500px;
 }
 
 .footer-logo {
@@ -473,6 +523,10 @@ select {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+.footer p {
+  opacity: 0.6;
+  font-size: 14px;
 }
 
 .footer-column h4 {
